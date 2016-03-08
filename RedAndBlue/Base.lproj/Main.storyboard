@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E49a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RedAndBlue" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUm-ZD-nHy">
+                                <rect key="frame" x="212" y="379" width="136" height="82"/>
+                                <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="45"/>
+                                <state key="normal" title="Hide Blue"/>
+                                <connections>
+                                    <action selector="blueBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWh-2m-h1Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k32-3f-gPB">
+                                <rect key="frame" x="207" y="379" width="147" height="82"/>
+                                <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="45"/>
+                                <state key="normal" title="Show Blue"/>
+                                <connections>
+                                    <action selector="blueBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PCM-Jh-5cT"/>
+                                    <action selector="showBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZN-vt-jqr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1N4-8n-zgG">
+                                <rect key="frame" x="23" y="379" width="136" height="82"/>
+                                <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="45"/>
+                                <state key="normal" title="Hide Red "/>
+                                <connections>
+                                    <action selector="redBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GpQ-0a-1h0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcE-7w-FRK">
+                                <rect key="frame" x="18" y="379" width="147" height="82"/>
+                                <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="45"/>
+                                <state key="normal" title="Show Red "/>
+                                <connections>
+                                    <action selector="redBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="68Q-Wg-VhV"/>
+                                    <action selector="showRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vSq-3u-xtr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="red" translatesAutoresizingMaskIntoConstraints="NO" id="gnZ-YL-jsY">
+                                <rect key="frame" x="20" y="76" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="0xq-be-oXI"/>
+                                    <constraint firstAttribute="width" constant="150" id="a0L-on-dy2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="7cz-u9-xJh">
+                                <rect key="frame" x="205" y="76" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Xzh-7x-h8N"/>
+                                    <constraint firstAttribute="width" constant="150" id="lvV-94-WCF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gnZ-YL-jsY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7fl-kQ-j9b"/>
+                            <constraint firstItem="7cz-u9-xJh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="9HT-zo-hQI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k32-3f-gPB" secondAttribute="bottom" constant="206" id="9gm-nf-7Uy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PcE-7w-FRK" secondAttribute="bottom" constant="206" id="CjR-0t-jiz"/>
+                            <constraint firstItem="gnZ-YL-jsY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="EXl-oa-4J3"/>
+                            <constraint firstItem="PcE-7w-FRK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="F4C-tN-kTm"/>
+                            <constraint firstItem="1N4-8n-zgG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="Plu-PB-3EG"/>
+                            <constraint firstAttribute="trailing" secondItem="eUm-ZD-nHy" secondAttribute="trailing" constant="27" id="T8w-78-POh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1N4-8n-zgG" secondAttribute="bottom" constant="206" id="UOF-Ld-ynb"/>
+                            <constraint firstAttribute="trailing" secondItem="7cz-u9-xJh" secondAttribute="trailing" constant="20" id="nHC-D5-bTP"/>
+                            <constraint firstAttribute="trailing" secondItem="k32-3f-gPB" secondAttribute="trailing" constant="21" id="r2j-vu-2y1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eUm-ZD-nHy" secondAttribute="bottom" constant="206" id="x42-yH-aJo"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueImg" destination="7cz-u9-xJh" id="AHw-Mc-uGU"/>
+                        <outlet property="hideBlueBtn" destination="eUm-ZD-nHy" id="ef3-bO-o6Z"/>
+                        <outlet property="hideRedBtn" destination="1N4-8n-zgG" id="k05-PL-LOM"/>
+                        <outlet property="redImg" destination="gnZ-YL-jsY" id="OAr-gl-6hb"/>
+                        <outlet property="showBlueBtn" destination="k32-3f-gPB" id="0NA-uU-EO7"/>
+                        <outlet property="showRedBtn" destination="PcE-7w-FRK" id="6Do-dc-8eA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.5" y="420.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue" width="2880" height="1800"/>
+        <image name="red" width="425" height="318"/>
+    </resources>
+</document>
